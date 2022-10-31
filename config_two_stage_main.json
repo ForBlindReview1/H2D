@@ -1,0 +1,42 @@
+{
+    "gpu": {
+        "use": true,
+        "id": 0
+    },
+    
+    "model": "fasterRCNN",
+    
+    "path": "/nasdata2/khj/objectdetection/orig_pb_new/images",
+    
+    "pretrained": null,
+    
+    "prefix": "tmp",
+    
+    "train_index": "./train_index_k10_pb.npy",
+    "test_index": "./test_index_k10_pb.npy",
+    
+    "save_dir": ".",
+ 
+    "params": {
+        "img_size": 608,
+        "K": 10,
+        "val_percent": 0.1,
+        "plotpr": true,
+        "plotconf": true
+    },
+    
+    "net_params": {
+        "subdivisions": 16,
+        "batch_size": 4,
+        "nbepoch": 100,
+        "lr": 0.01,
+        "momentum": 0.9,
+        "wd": 0.0005,
+        "stepsize": 30,
+        "gamma": 0.5,
+        "print_freq": 5,
+        "eval_freq": 10,
+        "iou_thres": 0.6,
+        "conf_thres": 0.4
+    }
+}
