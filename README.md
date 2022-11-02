@@ -46,5 +46,13 @@ python train_on_voc.py --GPU_NUM $GPU_NUM --save_dir $PATH_FOR_SAVE --pretrained
 
 ## Results
 
+* mean (std) for the 10-fold cross validation
+
 |Method|mAP|mAP_50|mAR|
-|Rand. Init.|84.9 \pm 11.5|||
+|---|---|---|---|
+|Rand. Init.|84.9 (11.5)|95.8 (8.2)|89.4 (6.6)|
+|MOCOv2|86.5 (12.2)|95.5 (10.0)|89.6 (8.9)|
+|BYOL|86.6 (11.0)|96.1 (8.1)|90.5 (6.6)|
+|Compress|87.0 (12.1)|95.9 (10.30|90.3 (8.5)|
+|ISD|87.6 (11.8)|96.4 (9.6)|90.4 (8.5)|
+|**H2D**|**87.6 (10.6)**|**96.7 (7.8)**|**90.9 (7.1)**|
