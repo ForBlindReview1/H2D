@@ -45,3 +45,6 @@ python train_on_voc.py --GPU_NUM $GPU_NUM --save_dir $PATH_FOR_SAVE --pretrained
 ```
 
 ## Results
+
+|Method|mAP|mAP_50|mAR|
+|Rand. Init.|84.9 \pm 11.5|||
