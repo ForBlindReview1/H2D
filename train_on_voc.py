@@ -68,7 +68,7 @@ class load_voc():
         
         # preparing a data list
         #dataset = 'VOC2007' # or VOC2007_test, VOC2012, VOC2007+2012
-        #path = '/nasdata2/khj/objectdetection/segmentation/VOCdevkit/'
+        #path = './VOCdevkit/'
         if self.set_name in ['VOC2007', 'VOC2007_test', 'VOC2012']:
 
             img_base_path = os.path.join(self.root_dir,self.set_name,'JPEGImages')
