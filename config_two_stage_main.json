@@ -6,7 +6,7 @@
     
     "model": "fasterRCNN",
     
-    "path": "/nasdata2/khj/objectdetection/orig_pb_new/images",
+    "path": "./images",
     
     "pretrained": null,
     
