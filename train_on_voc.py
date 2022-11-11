@@ -239,8 +239,8 @@ def main(args):
     device = gpu_setup(True, args.GPU_NUM)
     
     print("Data loading")
-    voc_loader_train = load_voc(root_dir='/nasdata2/khj/objectdetection/segmentation/VOCdevkit/', set_name='VOC2007+2012')
-    voc_loader_test = load_voc(root_dir='/nasdata2/khj/objectdetection/segmentation/VOCdevkit/', set_name='VOC2007_test')
+    voc_loader_train = load_voc(root_dir='./VOCdevkit/', set_name='VOC2007+2012')
+    voc_loader_test = load_voc(root_dir='./VOCdevkit/', set_name='VOC2007_test')
 
     imgs_train, labs_train = voc_loader_train.get_dataset()
     imgs_test, labs_test = voc_loader_test.get_dataset()
